@@ -1,1 +1,15 @@
 # Image-Colorization-Using-Deep-Learning
+- This project was finished as part of the Null Class Data Science Internship and comprises of nine increasingly difficult challenges.  Using a variety of deep learning methods, including CNNs, U-Nets, semantic segmentation, and attention mechanisms, the objective was to create models that colorize grayscale photos and movies.
+  
+- The CIFAR-10 dataset, which comprises 60,000 32x32 color images in 10 classes, is the primary dataset utilized for all challenges.  In order to teach the model to learn color restoration, grayscale images were created from the original color photos for certain jobs.
+- Dataset Drive Link: https://drive.google.com/drive/folders/1c-J1wtcUTuGTwsJ0HYwgS7W7oHOA3Nj-?usp=drive_link
+  
+- Task 1 – Environment Setup & Preprocessing: Install the necessary libraries and set up the development environment. utilized normalizing techniques and rgb2lab to convert RGB photos to grayscale (LAB space). created the pipeline for preprocessing and the rudimentary visuals.
+- Task 2 – Basic CNN Colorization Model: Converted grayscale CIFAR-10 images back to RGB using a basic convolutional neural network (CNN) model. Basic supervised training with pixel-wise loss was the main emphasis of this work.
+- Task 3 – Experimenting with Loss Functions: In order to observe effects on image quality, various loss functions, including MSE, MAE, and Perceptual Loss, were compared. determined the best loss for upcoming tasks by analyzing training curves.
+- Task 4 – Historical Photo Colorization: Used actual black-and-white old photos to test the learned model. showed that the model could generalize to photos that weren't in the dataset.
+- Task 5 – Semantic Segmentation for Targeted Colorization: Incorporated a segmentation model (such as DeepLab or U-Net) to colorize particular things (such as roads, automobiles, and trees) according to their semantic class. Per-class accuracy and the confusion matrix were used to evaluate performance.
+- Task 6 – Interactive User-Guided Colorization: Gradio was used to create a simple graphical user interface (GUI) that let users add color strokes or hints and upload grayscale photos. The model then used these clues to convey color information.
+- Task 7 – Cross-Domain Image Colorization: Created a model that can colorize a variety of objects, including satellite photos and doodles. The model uses conditional training to adjust to the domain that the user chooses from the GUI.
+- Task 8 – Real-Time Multi-Object Colorization: Created a real-time colorization system that uses DeepLabV3 segmentation to identify and colorize a variety of objects in live video streams, including automobiles, people, buildings, etc. could be expanded to include real-time uses.
+- Task 9 – Context-Aware Colorization of Complex Scenes: Developed a sophisticated system that uses contextual interactions to colorize natural sceneries and cityscapes. For higher-quality results, segmentation, focus, and scene comprehension were combined. GUI and assessment using SSIM and PSNR are included.
